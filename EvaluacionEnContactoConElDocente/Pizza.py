@@ -275,7 +275,7 @@ def ModificarDatos():
         elif opcion == "2":
             modificar_tabla("pedido", "id_pedidos")
         elif opcion == "3":
-            modificar_tabla("ingrediente_adicional", "id_detalle")  # o usar un campo compuesto si fuera necesario
+            modificar_tabla("ingrediente_adicional", "id_detalle")
         elif opcion == "4":
             modificar_tabla("metodo_pago", "id_metodo")
         elif opcion == "5":
@@ -322,7 +322,7 @@ def EliminarDatos():
         elif opcion == "2":
             eliminar_registro("pedido", "id_pedidos")
         elif opcion == "3":
-            eliminar_registro("ingrediente_adicional", "id_detalle")  # depende de la clave primaria real
+            eliminar_registro("ingrediente_adicional", "id_detalle")
         elif opcion == "4":
             eliminar_registro("metodo_pago", "id_metodo")
         elif opcion == "5":
@@ -339,7 +339,7 @@ def EliminarDatos():
         print("2. Top 3 clientes con más pedidos")
         print("3. Pedidos ordenados por demanda (descendente)")
         print("4. Listado de pedidos realizados en enero y mayo")
-        print("5. Total de ingredientes adicionales más solicitados")  # Consulta adicional propuesta
+        print("5. Total de ingredientes adicionales más solicitados") 
         print("6. Regresar al menú principal")
 
     def consulta_tabla_completa():
